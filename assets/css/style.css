@@ -5,3 +5,12 @@
 #done {
 	margin-top: 20px;
 }
+
+img {
+	width: 250px;
+	height: 125px;
+}
+
+input{
+vertical-align:bottom;
+}
