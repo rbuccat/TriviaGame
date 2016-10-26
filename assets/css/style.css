@@ -11,6 +11,6 @@ img {
 	height: 125px;
 }
 
-input{
-vertical-align:bottom;
+form {
+	margin: 20px 0px 70px 0px;
 }
