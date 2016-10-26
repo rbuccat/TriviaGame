@@ -3,7 +3,7 @@
 }
 
 #done {
-	margin-top: 20px;
+	margin: 20px 0px 50px 0px;
 }
 
 img {
@@ -14,3 +14,19 @@ img {
 form {
 	margin: 20px 0px 70px 0px;
 }
+
+@font-face {
+	font-family: 'AlteHaasGroteskBold';
+	src: url('AlteHaasGroteskBold.TTF')
+}
+
+#headline h1,
+#log h3,
+#questions h2,
+#timeleft h2 {
+	font-family: 'AlteHaasGroteskBold';
+}
+
+/*#log h3 {
+	font-family: 'AlteHaasGroteskBold';
+}*/
