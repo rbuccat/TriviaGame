@@ -2,180 +2,255 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <!-- Added link to the jQuery Library -->
   <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<title>Document</title>
+	<title>Slogan Trivia</title>
 </head>
 <body>
-	<div id="start" class="btn-group btn-group-lg" role="group">
-    		<button type="button" class="btn btn-default"><!-- <span id=answera></span> -->Start</button>
-  		</div>
-	<div class="jumbotron">
-  		<div id=timeLeft></div>
-  		<div id=questions></div>
-  		<div id=answers></div>
-	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
 
-	<div class="btn-group-vertical" role="group" aria-label="...">
-  		<div class="btn-group btn-group-lg" role="group">
-    		<button type="button" class="btn btn-default answerButton" value=a><span id=answera></span></button>
-  		</div>
-  		<div class="btn-group btn-group-lg" role="group">
-			<button type="button" class="btn btn-default answerButton" value=b><span id=answerb></span></button>
-  		</div>
-  		<div class="btn-group btn-group-lg" role="group">
-    		<button type="button" class="btn btn-default answerButton" value=c><span id=answerc></span></button>
-  		</div>
-  		<div class="btn-group btn-group-lg" role="group">
-    		<button type="button" class="btn btn-default answerButton" value=d><span id=answerd></span></button>
-  		</div>
-	</div>
+				<div class="jumbotron">
+				<div id="headline"></div>
+  				<div id=timeLeft></div>
+  				<div id="log"></div>
+			</div>
 
-	<div class="media">
-  <div class="media-left media-middle">
-    <a href="#">
-      <img class="media-object" src="..." alt="...">
-    </a>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">Middle aligned media</h4>
-    ...
-  </div>
+		<div class="row">
+			
+			<div class="col-md-4"></div>
+  				<div class="col-md-4 text-center">
+  					<div id="start">
+    					<button type="button" class="btn btn-default btn-lg btn-block">Start</button>
+  					</div>
+  				</div>
+  				<div class="col-md-4"></div>
+			</div>
+
+		<div id="reset" class="btn-group btn-group-lg" role="group">
+    		<button type="button" class="btn btn-default">Start Over?</button>
+  		</div>
+
+<div id="questions">
+
+	<div>
+	  <h2>Taste The Rainbow</h2>
+  
+  		<form>
+    		<label class="radio-inline">
+      			<input class="question1" type="radio" name="optradio" value=1>Sour Patch Kids
+    		</label>
+    		<label class="radio-inline">
+      <input class="question1" type="radio" name="optradio" value=2>Smarties
+    </label>
+    <label class="radio-inline">
+      <input class="question1" type="radio" name="optradio" value=3>Starburst
+    </label>
+    <label class="radio-inline">
+      <input class="question1" type="radio" name="optradio" value=4>Skittles
+    </label>
+  </form>
 </div>
+
+<div>
+	  <h2>Obey Your Thirst</h2>
+  
+  <form>
+    <label class="radio-inline">
+      <input class="question2" type="radio" name="optradio" value=1>Dr.Pepper
+    </label>
+    <label class="radio-inline">
+      <input class="question2" type="radio" name="optradio" value=2>Sprite
+    </label>
+    <label class="radio-inline">
+      <input class="question2" type="radio" name="optradio" value=3>Pepsi
+    </label>
+    <label class="radio-inline">
+      <input class="question2" type="radio" name="optradio" value=4>7UP
+    </label>
+  </form>
+</div>
+
+<div id="question3">
+	  <h2>Welcome to the human network.</h2>
+  
+  <form>
+    <label class="radio-inline">
+      <input class="question3" type="radio" name="optradio" value=1>Verizon
+    </label>
+    <label class="radio-inline">
+      <input class="question3" type="radio" name="optradio" value=2>AT&T
+    </label>
+    <label class="radio-inline">
+      <input class="question3" type="radio" name="optradio" value=3>Cisco
+    </label>
+    <label class="radio-inline">
+      <input class="question3" type="radio" name="optradio" value=4>Sprint
+    </label>
+  </form>
+</div>
+
+<div id="question4">
+	  <h2>It’s everywhere you want to be.</h2>
+  
+  <form>
+    <label class="radio-inline">
+      <input class="question4" type="radio" name="optradio" value=1>Mastercard
+    </label>
+    <label class="radio-inline">
+      <input class="question4" type="radio" name="optradio" value=2>Discover
+    </label>
+    <label class="radio-inline">
+      <input class="question4" type="radio" name="optradio" value=3>Visa
+    </label>
+    <label class="radio-inline">
+      <input class="question4" type="radio" name="optradio" value=4>American Express
+    </label>
+  </form>
+</div>
+
+<div id="question5">
+	  <h2>What’s In Your Wallet?</h2>
+  
+  <form>
+    <label class="radio-inline">
+      <input class="question5" type="radio" name="optradio" value=1>Capital One
+    </label>
+    <label class="radio-inline">
+      <input class="question5" type="radio" name="optradio" value=2>HSBC
+    </label>
+    <label class="radio-inline">
+      <input class="question5" type="radio" name="optradio" value=3>Citibank
+    </label>
+    <label class="radio-inline">
+      <input class="question5" type="radio" name="optradio" value=4>TD Bank
+    </label>
+  </form>
+</div>
+
+<div id="question6">
+	  <h2>The silver bullet.</h2>
+  
+  <form>
+    <label class="radio-inline">
+      <input class="question6" type="radio" name="optradio" value=1>Budweiser
+    </label>
+    <label class="radio-inline">
+      <input class="question6" type="radio" name="optradio" value=2>Miller Lite
+    </label>
+    <label class="radio-inline">
+      <input class="question6" type="radio" name="optradio" value=3>Coors
+    </label>
+    <label class="radio-inline">
+      <input class="question6" type="radio" name="optradio" value=4>Bud Light
+    </label>
+  </form>
+</div>
+
+<div id="question7">
+	  <h2>We move the world.</h2>
+  
+  <form>
+    <label class="radio-inline">
+      <input class="question7" type="radio" name="optradio" value=1>USPS
+    </label>
+    <label class="radio-inline">
+      <input class="question7" type="radio" name="optradio" value=2>FedEx
+    </label>
+    <label class="radio-inline">
+      <input class="question7" type="radio" name="optradio" value=3>UPS
+    </label>
+    <label class="radio-inline">
+      <input class="question7" type="radio" name="optradio" value=4>DHL
+    </label>
+  </form>
+</div>
+
+<div id="question8">
+	  <h2>Where’s the beef?</h2>
+  
+  <form>
+    <label class="radio-inline">
+      <input class="question8" type="radio" name="optradio" value=1>Wendy's
+    </label>
+    <label class="radio-inline">
+      <input class="question8" type="radio" name="optradio" value=2>Mcdonalds
+    </label>
+    <label class="radio-inline">
+      <input class="question8" type="radio" name="optradio" value=3>Burger King
+    </label>
+    <label class="radio-inline">
+      <input class="question8" type="radio" name="optradio" value=4>Carl's Jr.
+    </label>
+  </form>
+</div>
+
+	<div class="row">
+			
+			<div class="col-md-4"></div>
+  			<div class="col-md-4 text-center">
+  				<div id="done">
+    				<button type="button" class="btn btn-default btn-lg btn-block">Done</button>
+  				</div>
+  			</div>
+  			<div class="col-md-4"></div>
+	</div>
+
+
+  		
+</div>
+</div>
+</div>
+</div>
+
+
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 <script type="text/javascript">
-
-	var number;
-	var firstQuestion;
-	var showQuestion;
-	var trivia = {
-		questions: ["how cross the road with the chicken?", "am i stinky?"],
-		aAnswers: ["blah1", "very stinky"],
-		bAnswers: ["blah2", "very very stinky"],
-		cAnswers: ["blah3", "very very very stinky"],
-		dAnswers: ["blah4", "very x10 stinky"],
-		correctAnswer1: ["blah3", "smells like roses"],
-		correctAnswer2:[],
-		userAnswer:[],
-		images:[],
-		videos:[]
-	}
-
-	var correctCounter = 0;
-	var wrongCounter = 0;
-
-	//setTimeout(showAnswer, 1000 * 5);
-
-        // When the stop button gets clicked, run the stop function.
-        //$('#stop').on('click', stop);
-        // When the resume button gets clicked, execute the run function.
-        //$('#resume').on('click', run);
-
-        // The run function sets an interval
-        // that runs the decrement function once a second.
-        // Notice how we name the interval "counter."
-        hideButtons();
-        $(".media").hide();
-        hideQuestions();
-
-        function startFirstquestion(){
-            
-            $("#start").hide();
-            $("#questions").show();
-            showButtons();
-            theQuestions();
-        }
-
-        function theQuestions(){
-        	number = 30;
-            counter = setInterval(decrement, 1000);
-
-            for (var j = 0; i < trivia.questions.length; j++) {
-            $("#questions").html("<h2>" + trivia.questions[j] + "</h2>");
-            $("#answera").html(trivia.aAnswers[j]);
-			$("#answerb").html(trivia.bAnswers[j]);
-			$("#answerc").html(trivia.cAnswers[j]);
-			$("#answerd").html(trivia.dAnswers[j]);
-			j++;
-			}
-        }
-
-        $('#start').on("click", startFirstquestion);
-
-        function showButtons() {
-        	$(".answerButton").show();
-        }
-
-        function hideButtons() {
-        	$(".answerButton").hide();
-		}
-
-		function hideQuestions() {
-			$("#questions").hide();
-		}
-
-        $('.answerButton').on('click', function(){
-		trivia.userAnswer.push($(this).attr("value"));
-		console.log(trivia.userAnswer);
-		showAnswer();
-		
-
-
-		});
-		
+$(document).ready(function(){
 	
-	for (var i = 0; i < trivia.questions.length; i++) {
+	var number;
+	var answers = [];
+	var correctAnswers = [4, 2, 3, 3, 1, 3, 4, 1];
+	var storeValue;
+	var counter;
+	var rightCounter = 0;
+	var wrongCounter = 0;
+	var noAnswer = 0
+	
+	hidequestions();
+	hidereset();
+	$("#headline").html("<h1>Slogan Trivia</h2>");
+	
+	function hidequestions() {
+		$("#questions").hide();
+	};
 
-		if (userAnswer[i] == correctAnswer[i]) {
-			correctCounter++;
-		}
-		else {
-			wrongCounter++;
-		}
+	function hidereset() {
+		$("#reset").hide();
 	}
 
-		function showAnswer() {
-			stop();
-			hideQuestions();
-			hideButtons();
-			displayAnswer();
-			setTimeout(displayAnswer, 1000 * 5);
-			// nextQuestion();
+	function starttrivia() {
+		$("#questions").show();
+		$('input').removeAttr('checked');
+		$("#timeLeft").show();
+		$("#start").hide();
+		hidereset();
 
-		}
+		number = 90;
+   		counter = setInterval(decrement, 1000);
+	};
+	
+	$("#start").on("click", starttrivia);
+		
 
-		function displayAnswer (){
-  			$(".media").show();
-  			for (var k = 0; k < trivia.questions.length; k++) {
-  			$("#answers").html("<h2>The correct answer was: " + trivia.correctAnswer1[k] );
-  			k++;
-			}
-		}
-
-        // function nextQuestion() {
-	// 	startTimer();
-	// 	$(".answerButton").show();
-	// 	// TODO: Show the loading gif in the "image-holder" div.
- //  		for (var j = 0; j < trivia.questions.length; j++) {
- //  			$('#questions').html('<h1>' + trivia.questions[i] + '</h1>');
-	// 		$("#answera").html(trivia.aAnswers[j]);
-	// 		$("#answerb").html(trivia.bAnswers[j]);
-	// 		$("#answerc").html(trivia.cAnswers[j]);
-	// 		$("#answerd").html(trivia.dAnswers[j]);
-	// };
-
-
-        function nextQuestion() {
-        	number = 30;
-        	counter = setInterval(decrement, 1000);
-
-        }
-
-        // The decrement function.
+	// The decrement function.
         function decrement(){
             // Decrease number by one.
             number--;
@@ -185,7 +260,7 @@
             // Once number hits zero...
             if (number === 0){
                 // ...run the stop function.
-                stop();
+                results();
                 // Alert the user that time is up.
                 alert('Time Up!')
             }
@@ -199,102 +274,62 @@
             clearInterval(counter);
         }
 
-        // Execute the run function.
-        // run();
+  		 $("#done").on("click", results);
 
-        
+  		function results() {
 
+  			hidequestions();
+  			stop();
+  			$("#timeLeft").hide()
+			$("#log").show()  			
 
-	// var showQuestion;
-	// var trivia = {
-	// 	questions: ["what"],
-	// 	aAnswers: ["blah1"],
-	// 	bAnswers: ["blah2"],
-	// 	cAnswers: ["blah3"],
-	// 	dAnswers: ["blah4"],
-	// 	correctAnswer: [],
-	// 	userAnswer:[],
-	// 	images:[],
-	// 	videos:[]
-	// }
+  			for (var i = 1; i < 9; i++) {
+			 	storeValue = $( ".question" + i + ":checked" ).val();
+			 	answers.push(storeValue);
+			 }
 
-	// var correctCounter = 0;
-	// var wrongCounter = 0;
-	// var number;
-	
-	
-	// // function startTrivia() {
-	// // 	// TODO: Use a setInterval to run nextImage.
- // //  	showQuestion = setInterval(nextQuestion, 3000);
-	// // };
+			for(var j = 0; j < answers.length; j++) {
+				console.log(answers[j]);
+			} 
 
-	// // The run function sets an interval
- //        // that runs the decrement function once a second.
- //        // Notice how we name the interval "counter."
- //        function startTimer(){
- //        	number = 30;
- //            counter = setInterval(decrement, 1000);
- //        }
+  				for (var k = 0; k < correctAnswers.length; k++) {
+  					
+  					if (answers[k] == correctAnswers[k]) {
+  						rightCounter++;
+  						console.log(rightCounter);
+  					}
+  					else if (answers[k] === undefined){
+  						noAnswer++;
+  					}
+  					else if (answers[k] != correctAnswers[k]) {
+  						wrongCounter++;
+  						console.log(wrongCounter);
+  					}
+  					
+  				}
+  			$( "#log" ).html("<h3>All Done!!</h3>");
 
- //        // The decrement function.
- //        function decrement(){
- //            // Decrease number by one.
- //            number--;
- //            // Show the number in the #show-number tag.
- //            $('#timeLeft').html('<h1>Time Remaining: ' + number + ' seconds</h1>');
+  			$( "#log" ).append("<h3>Correct Answers: " + rightCounter + "</h3>");	
+  			$( "#log" ).append("<h3>Wrong Answers: " + wrongCounter + "</h3>");
 
- //            // Once number hits zero...
- //            if (number === 0){
- //                // ...run the stop function.
- //                stopTheTime();
- //                // Alert the user that time is up.
- //                alert('Time Up!')
- //            }
- //        }
+  			$( "#log" ).append("<h3>Unanswered: " + noAnswer + "</h3>");
 
+  			$("#reset").show();
+  		}
+  		function reset() {
+  			answers = [];
+  			rightCounter = 0;
+  			wrongCounter = 0;
+  			noAnswer = 0;
+  			var storeValue;
+  			$("#log").hide();
+  			hidereset();
+  			starttrivia();
+  		}
 
-	// function nextQuestion() {
-	// 	startTimer();
-	// 	$(".answerButton").show();
-	// 	// TODO: Show the loading gif in the "image-holder" div.
- //  		for (var j = 0; j < trivia.questions.length; j++) {
- //  			$('#questions').html('<h1>' + trivia.questions[i] + '</h1>');
-	// 		$("#answera").html(trivia.aAnswers[j]);
-	// 		$("#answerb").html(trivia.bAnswers[j]);
-	// 		$("#answerc").html(trivia.cAnswers[j]);
-	// 		$("#answerd").html(trivia.dAnswers[j]);
-	// };
-
-	// function showAnswer() {
-	// 	$(".answerButton").hide();
-
-	// };
-
-	// function stopTheTime(){
- //            // Clears our "counter" interval.
- //            // We just pass the name of the interval
- //            // to the clearInterval function.
- //            clearInterval(counter);
- //        }
-
-	// $('#start').on("click", startTimer);
-
-	// $('.answerButton').on('click', function(){
-	// 	trivia.userAnswer.push($(this).attr("value"));
-	// 	stopTheTime();
-	// 	showAnswer();
-	// 	nextQuestion();
-	
-	// for (var i = 0; i < trivia.questions.length; i++) {
-
-	// 	if (userAnswer[i] == correctAnswer[i]) {
-	// 		correctCounter++;
-	// 	}
-	// 	else {
-	// 		wrongCounter++;
-	// 	}
-	// }
-	// });
+  		$("#reset").on("click", reset);
+});
+       
 </script>
 </body>
 </html>
